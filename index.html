@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Liste de notes des étudiants</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-md-12 pb-5">
+          <form class="d-flex " role="search">
+            <input class="form-control me-2" type="search" placeholder="Prénom" aria-label="Search" id="input_search">
+            <button class="btn bg-primary text-light fs-5" type="click" id="buttonSearch">Rechercher</button>
+          </form>
+        </div>
+        <div class="col-md-12 d-flex justify-content-center p-4 border bg-primary text-light"><h2>Liste des étudiants</h2></div>
+        <div class="table table-responsive border-start border-end p-1 border-bottom">
+            <div class="infos d-flex justify-content-around flex-nowrap">
+              <div class="col border-end">
+                <h6 class="fw-bold">Prénom</h6>
+              </div>
+              <div class="col border-end">
+                <h6 class="fw-bold">Nom</h6>
+              </div>
+              <div class="col border-end">
+                <h6 class="fw-bold">Age</h6>
+              </div>
+              <div class="col">
+                <h6 class="fw-bold">Note</h6>
+              </div>
+            </div>
+            <div  id="students"></div>
+        </div>
+        <div class="border p-3 bg-primary text-light w-50" id="noteMax"></div>
+        <div class="border p-3 bg-primary text-light w-50" id="noteMin"></div>
+        <div class="border p-3 bg-primary text-light w-50" id="ageMax"></div>
+        <div class="border p-3 bg-primary text-light w-50" id="ageMin"></div>
+      </div>
+    </div>
+
+
+
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
